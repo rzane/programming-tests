@@ -4,11 +4,18 @@ This is a collection of tests to verify basic programming knowledge in a variety
 
 ## Instructions
 
-+ You'll need to create a class called `Person`. The constructor will accept one argument: `name`.
-+ An instance of `Person` will respond to a `greet` method that accepts on argument: `message`.
+In the folder representing each language, there will be two files. One file provides unit tests. The other file is awaiting an implementation that will allow all of the tests to pass.
+
+Here's a description of the class you must define:
+
++ The class will be called `Person`. It's constructor will accept one argument: `name`.
++ An instance of this class will offer a getter for the Person's name.
++ An instance of this class will respond to a `greet` method that accepts one argument: `message`.
 + When the message is `Hello`, `greet` must return `Hi, I'm {{name}}`.
 + When the message is `Goodbye`, `greet` must return `Bye`.
 + When the message is anything else, `greet` will return the message that it was provided.
+
+Here are instructions for running the tests for each language:
 
 ### Java
 
@@ -21,14 +28,18 @@ This is a collection of tests to verify basic programming knowledge in a variety
 
 Simply open `javascript/index.html` in your browser.
 
+### PHP
+
+Install PHPUnit. Execute `phpunit php/PersonTest.php`
+
 ### Python
 
-Simply execute `python python/person_test.py`.
+Execute `python python/person_test.py`.
 
 ### Ruby
 
-Simply execute `ruby ruby/person_test.rb`.
+Execute `ruby ruby/person_test.rb`.
 
 ## Submission
 
-Create a private Github snippet and share it with me.
+Create a private Github snippet and send me the url.
