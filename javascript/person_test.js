@@ -1,14 +1,20 @@
 'use strict';
 
-module('Person', {
-  beforeEach: function () {
+if (typeof window === 'undefined') {
+  // We're running node. Make sure
+  // to export Person in person.js
+  var Person = require('./person.js');
+}
+
+QUnit.module('Person', {
+  setup: function() {
     this.jeff = new Person('Jeff');
     this.susy = new Person('Susy');
   }
 });
 
-test('has a name property', function() {
-  equal(this.jeff.name, 'Jeff');
+test('has a name', function() {
+  equal(this.jeff.getName(), 'Jeff');
 });
 
 test('introduces when I say Hello to Jeff', function () {

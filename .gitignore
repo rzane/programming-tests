@@ -1,2 +1,4 @@
 /java/*.class
+/java/build
+/java/gradle
 /python/*.pyc

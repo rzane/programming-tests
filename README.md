@@ -15,28 +15,38 @@ Here's a description of the class you must define:
 + When the message is `Goodbye`, `greet` must return `Bye`.
 + When the message is anything else, `greet` will return the message that it was provided.
 
-Here are instructions for running the tests for each language:
+You can run the tests for each language using rake:
 
-### Java
+    $ rake <language>
+
+Or, follow these instructions:
+
+#### Java
 
 1. Open Eclipse and go to File > Import
 2. Choose General > Existing Projects into Workspace. Click Next.
 3. Click Browse and choose the `java` folder from this project. Click Finish.
 4. You now be able to run the project.
 
-### Javascript
+#### Javascript
 
 Simply open `javascript/index.html` in your browser.
 
-### PHP
+Or, if you'd prefer to the tests using node:
+
+1. `npm install -g qunit`
+2. `qunit -c javascript/person.js -t javascript/person_test.js`
+3. Make sure to export Person.
+
+#### PHP
 
 Install PHPUnit. Execute `phpunit php/PersonTest.php`
 
-### Python
+#### Python
 
 Execute `python python/person_test.py`.
 
-### Ruby
+#### Ruby
 
 Execute `ruby ruby/person_test.rb`.
 
