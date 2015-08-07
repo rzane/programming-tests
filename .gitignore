@@ -7,4 +7,5 @@
 /csharp/Person/[Bb]in/
 /csharp/Person/[Oo]bj/
 /csharp/packages/
+/csharp/.nuget/
 /csharp/TestResult.xml
