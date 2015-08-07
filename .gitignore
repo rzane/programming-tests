@@ -14,3 +14,7 @@
 /objective-c/build
 /objective-c/**/xcuserdata
 /objective-c/**/*.xccheckout
+
+/swift/build
+/swift/**/xcuserdata
+/swift/**/*.xccheckout

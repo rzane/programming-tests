@@ -29,12 +29,13 @@ task :javascript do
   system 'qunit', '-c', code_file, '-t', test_file
 end
 
-task :'objective-c' do
-  # Requires that xctool is installed. To install:
-  #   $ brew install xctool
-  system 'xctool', 'test',
-    '-scheme', 'Person',
-    '-workspace', 'objective-c/Person.xcodeproj/project.xcworkspace'
+# Requires that xctool is installed. To install:
+#   $ brew install xctool
+['swift', 'objective-c'].each do |language|
+  task language do
+    system 'xctool', 'test', '-scheme', 'Person',
+      '-workspace', "#{language}/Person.xcodeproj/project.xcworkspace"
+  end
 end
 
 task :php do

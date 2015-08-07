@@ -21,7 +21,7 @@ You can run the tests for each language using rake:
 
 Or, follow these instructions:
 
-#### C# 
+#### C#
 
 Open the solution in either Visual Studio or Xamarin Studio. You'll need to use NuGet to install NUnit.
 
@@ -48,6 +48,10 @@ Or, if you'd prefer to the tests using node:
 2. `qunit -c javascript/person.js -t javascript/person_test.js`
 3. Make sure to export Person.
 
+#### Objective C
+
+Open `objective-c/Person.xcodeproj` in Xcode.
+
 #### PHP
 
 Install PHPUnit. Execute `phpunit php/PersonTest.php`
@@ -59,6 +63,10 @@ Execute `python python/person_test.py`.
 #### Ruby
 
 Execute `ruby ruby/person_test.rb`.
+
+#### Swift
+
+Open `swift/Person.xcodeproj` in Xcode.
 
 ## Submission
 
