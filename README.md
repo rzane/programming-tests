@@ -23,10 +23,16 @@ Or, follow these instructions:
 
 #### Java
 
+To open the project in Eclipse:
+
 1. Open Eclipse and go to File > Import
 2. Choose General > Existing Projects into Workspace. Click Next.
 3. Click Browse and choose the `java` folder from this project. Click Finish.
 4. You now be able to run the project.
+
+Or you can use gradle:
+
+    $ gradle test -b java/build.gradle
 
 #### Javascript
 
