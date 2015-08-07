@@ -9,6 +9,7 @@
 /csharp/packages/
 /csharp/.nuget/
 /csharp/TestResult.xml
+/csharp/*.userprefs
 
 /objective-c/build
 /objective-c/**/xcuserdata
