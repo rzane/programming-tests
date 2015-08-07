@@ -9,3 +9,7 @@
 /csharp/packages/
 /csharp/.nuget/
 /csharp/TestResult.xml
+
+/objective-c/build
+/objective-c/**/xcuserdata
+/objective-c/**/*.xccheckout

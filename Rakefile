@@ -29,9 +29,17 @@ task :javascript do
   system 'qunit', '-c', code_file, '-t', test_file
 end
 
+task :'objective-c' do
+  # Requires that xctool is installed. To install:
+  #   $ brew install xctool
+  system 'xctool', 'test',
+    '-scheme', 'Person',
+    '-workspace', 'objective-c/Person.xcodeproj/project.xcworkspace'
+end
+
 task :php do
-  # Requires that phpunit is installed.
-  system 'phpunit', File.join('php', 'PersonTest.py')
+  # Requires that phpunit is installed
+  system 'phpunit', File.join('php', 'PersonTest.php')
 end
 
 task :python do
