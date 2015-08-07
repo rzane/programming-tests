@@ -2,6 +2,19 @@
 # To run them, you'll need rake installed. Then run:
 #   $ rake <language>
 
+task :csharp do
+  cd 'csharp' do
+    if RbConfig::CONFIG['host_os'] =~ /mswin|windows|cygwin/i
+      system 'msbuild', 'Person.sln' # windows
+    else
+      system 'xbuild', 'Person.sln' # using mono
+    end
+
+    # Requires that nunit-console is installed.
+    system 'nunit-console', File.join('Person', 'bin', 'Debug', 'Person.dll')
+  end
+end
+
 task :java do
   # Requires that gradle is installed
   system 'gradle', 'test -b', File.join('java', 'build.gradle')

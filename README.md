@@ -21,6 +21,10 @@ You can run the tests for each language using rake:
 
 Or, follow these instructions:
 
+#### C#
+
+Open the solution in either Visual Studio or Xamarin Studio. You'll need to use NuGet to install NUnit.
+
 #### Java
 
 To open the project in Eclipse:

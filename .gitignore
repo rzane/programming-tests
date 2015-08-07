@@ -1,4 +1,10 @@
 /java/*.class
 /java/build
-/java/gradle
+/java/.gradle
+
 /python/*.pyc
+
+/csharp/Person/[Bb]in/
+/csharp/Person/[Oo]bj/
+/csharp/packages/
+/csharp/TestResult.xml
