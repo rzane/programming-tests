@@ -2,6 +2,11 @@
 /java/build
 /java/.gradle
 
+/scala/*.class
+/scala/build
+/scala/.gradle
+/scala/.cache-main
+
 /python/*.pyc
 
 /csharp/Person/[Bb]in/

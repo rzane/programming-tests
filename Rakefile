@@ -15,11 +15,6 @@ task :csharp do
   end
 end
 
-task :java do
-  # Requires that gradle is installed
-  system 'gradle', 'test -b', File.join('java', 'build.gradle')
-end
-
 task :javascript do
   code_file = File.join('javascript', 'person.js')
   test_file = File.join('javascript', 'person_test.js')
@@ -29,17 +24,23 @@ task :javascript do
   system 'qunit', '-c', code_file, '-t', test_file
 end
 
+# Requires that gradle is installed
+[:java, :scala].each do |language|
+  task language do
+    system 'gradle', 'test', '-b', File.join(language.to_s, 'build.gradle')
+  end
+end
+
 # Requires that xctool is installed. To install:
 #   $ brew install xctool
-['swift', 'objective-c'].each do |language|
+[:swift, :'objective-c'].each do |language|
   task language do
     system 'xctool', 'test', '-scheme', 'Person',
       '-workspace', "#{language}/Person.xcodeproj/project.xcworkspace"
   end
 end
 
-task :php do
-  # Requires that phpunit is installed
+task :php do # Requires that phpunit is installed
   system 'phpunit', File.join('php', 'PersonTest.php')
 end
 

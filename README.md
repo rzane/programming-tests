@@ -21,17 +21,17 @@ You can run the tests for each language using rake:
 
 Or, follow these instructions:
 
-#### C# 
+#### C&#35;
 
 Open the solution in either Visual Studio or Xamarin Studio. You'll need to use NuGet to install NUnit.
 
-#### Java
+#### Java / Scala
 
 To open the project in Eclipse:
 
 1. Open Eclipse and go to File > Import
 2. Choose General > Existing Projects into Workspace. Click Next.
-3. Click Browse and choose the `java` folder from this project. Click Finish.
+3. Click Browse and choose the folder from this project. Click Finish.
 4. You now be able to run the project.
 
 Or you can use gradle:
