@@ -20,31 +20,31 @@ namespace Person
 		[Test]
 		public void TestName ()
 		{
-			Assert.AreEqual (jeff.name, "Jeff");
+			Assert.AreEqual (jeff.Name, "Jeff");
 		}
 
 		[Test]
 		public void TestGreetHelloJeff ()
 		{
-			Assert.AreEqual ("Hi, I'm Jeff", jeff.greet ("Hello"));
+			Assert.AreEqual ("Hi, I'm Jeff", jeff.Greet ("Hello"));
 		}
 
 		[Test]
 		public void TestGreetHelloSusy ()
 		{
-			Assert.AreEqual ("Hi, I'm Susy", susy.greet ("Hello"));
+			Assert.AreEqual ("Hi, I'm Susy", susy.Greet ("Hello"));
 		}
 
 		[Test]
 		public void TestGreetGoodbye ()
 		{
-			Assert.AreEqual ("Bye", jeff.greet ("Goodbye"));
+			Assert.AreEqual ("Bye", jeff.Greet ("Goodbye"));
 		}
 
 		[Test]
 		public void TestGreetOther ()
 		{
-			Assert.AreEqual ("Yo", jeff.greet ("Yo"));
+			Assert.AreEqual ("Yo", jeff.Greet ("Yo"));
 		}
 	}
 }
