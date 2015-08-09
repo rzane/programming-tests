@@ -15,11 +15,15 @@ Here's a description of the class you must define:
 + When the message is `Goodbye`, `greet` must return `Bye`.
 + When the message is anything else, `greet` will return the message that it was provided.
 
-You can run the tests for each language using rake:
+**Remember:** Your implementation must meet the specifications of the provided test suite.
+
+## Running tests
+
+To run the tests, follow the instructions below for the language(s) of your choice.
+
+As a convenience, you can also run the tests for each language using rake:
 
     $ rake <language>
-
-Or, follow these instructions:
 
 #### C&#35;
 
